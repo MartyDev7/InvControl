@@ -102,24 +102,24 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    InventariosFrame inventario;
+    InventariosFrame inventario; //creacion de la variable de tipo InventarioFrame
     private void btnInventariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInventariosActionPerformed
         if(inventario == null){
-            inventario = new InventariosFrame();
-            contenedorModulos.add(inventario);
-            contenedorModulos.getDesktopManager().maximizeFrame(inventario);
-            inventario.setVisible(true);
+            inventario = new InventariosFrame(); //declaracion del objeto de la clase InventariosFrame()
+            contenedorModulos.add(inventario); //agregar el objeto al contenedor de modulos o ventanas en el frame
+            contenedorModulos.getDesktopManager().maximizeFrame(inventario); // va a presentar el frame seleccionado
+            inventario.setVisible(true); // va a estar visible el objeto
         }else{
             contenedorModulos.getDesktopManager().maximizeFrame(inventario);
         }
     }//GEN-LAST:event_btnInventariosActionPerformed
 
-    VentasFrame ventas;
+    VentasFrame ventas; // creacion de la variable de tipo VentasFrame
     private void btnVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVentasActionPerformed
         if(ventas == null){
-            ventas = new VentasFrame();
-            contenedorModulos.add(ventas);
-            contenedorModulos.getDesktopManager().maximizeFrame(ventas);
+            ventas = new VentasFrame(); // declaracion del objeto de la clase VentasFrame()
+            contenedorModulos.add(ventas); // agregar el objeto al contenedor de modulos o ventanas en el frame
+            contenedorModulos.getDesktopManager().maximizeFrame(ventas); // va a presentar el frame seleccionado
             ventas.setVisible(true);
         }else{
             contenedorModulos.getDesktopManager().maximizeFrame(ventas);
