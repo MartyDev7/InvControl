@@ -26,16 +26,19 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        grupoModulos = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
-        btnInventarios = new javax.swing.JToggleButton();
         btnVentas = new javax.swing.JToggleButton();
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+        btnInventarios = new javax.swing.JToggleButton();
+        contenedorModulos = new javax.swing.JDesktopPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnInventarios.setText("Inventarios");
-
+        grupoModulos.add(btnVentas);
         btnVentas.setText("Ventas");
+
+        grupoModulos.add(btnInventarios);
+        btnInventarios.setText("Inventarios");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -58,15 +61,15 @@ public class Principal extends javax.swing.JFrame {
                 .addContainerGap(536, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1154, Short.MAX_VALUE)
-        );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout contenedorModulosLayout = new javax.swing.GroupLayout(contenedorModulos);
+        contenedorModulos.setLayout(contenedorModulosLayout);
+        contenedorModulosLayout.setHorizontalGroup(
+            contenedorModulosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
+        );
+        contenedorModulosLayout.setVerticalGroup(
+            contenedorModulosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 692, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -75,15 +78,15 @@ public class Principal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jDesktopPane1))
+                .addGap(1180, 1180, 1180)
+                .addComponent(contenedorModulos))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(contenedorModulos)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 32, Short.MAX_VALUE))
-            .addComponent(jDesktopPane1)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -127,7 +130,8 @@ public class Principal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton btnInventarios;
     private javax.swing.JToggleButton btnVentas;
-    private javax.swing.JDesktopPane jDesktopPane1;
+    private javax.swing.JDesktopPane contenedorModulos;
+    private javax.swing.ButtonGroup grupoModulos;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
